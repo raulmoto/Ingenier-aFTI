@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Capibaras Fan Page</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0fff0;
+      text-align: center;
+      padding: 20px;
+    }
+    #fotoCapibara {
+      width: 300px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .boton {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🐾 Bienvenido a Mundo Capibara 🐾</h1>
+
+  <p id="descripcion">Las capibaras son los roedores más grandes del mundo. ¡Y muy adorables!</p>
+
+  <img id="fotoCapibara" src="img/capibara1.jpg" alt="Capibara relajada">
+
+  <br>
+
+  <button class="boton" id="cambiarTexto">Cambiar descripción</button>
+  <button class="boton" id="cambiarColor">Cambiar color de fondo</button>
+  <button class="boton" id="mostrarMensaje">Mostrar mensaje secreto</button>
+  <button class="boton" id="cambiarFoto">Cambiar foto de capibara</button>
+
+  <button class="boton" id="cambiarColor2">Cambiar color</button>
+  <div id="caja" style="width:100px;height:100px;background:gray;"></div>
+
+  <input type="text" id="nuevoItem">
+  <button id="agregar">Agregar</button>
+  <ul id="lista"></ul>
+
+  <div id="mensaje" style="display:none; margin-top: 20px; font-weight: bold;"></div>
+
+  <script>
+    // Array con rutas locales de imágenes
+    const fotosCapibaras = [
+      "img/fotoCapibara1.jpg",
+      "img/fotoCapibara2.jpg",
+      "img/fotoCapibara3.jpg",
+      "img/fotoCapibara4.jpg",
+      "img/fotoCapibara5.jpg"
+    ];
+
+    // Cambia el texto del párrafo
+    $("#cambiarTexto").click(function() {
+      $("#descripcion").text("Las capibaras pueden dormir en el agua y vivir en grupos grandes.");
+    });
+
+    // Cambia el color de fondo aleatoriamente
+    $("#cambiarColor").click(function() {
+      let color = "#" + Math.floor(Math.random()*16777215).toString(16);
+      $("body").css("background-color", color);
+    });
+
+    // Muestra un mensaje oculto
+    $("#mostrarMensaje").click(function() {
+      $("#mensaje").text("¡Las capibaras son animales muy sociales! 🧡").fadeIn();
+    });
+
+    // Cambia la imagen a otra aleatoria
+    $("#cambiarFoto").click(function() {
+      const indice = Math.floor(Math.random() * fotosCapibaras.length);
+      $("#fotoCapibara").attr("src", fotosCapibaras[indice]);
+    });
+    //cambiar color
+    $("#cambiarColor2").click(function(){
+      const colorAleatorio = "#" + Math.floor(Math.random() * 16777215).toString(16);
+      $("#caja").css("background-color", colorAleatorio);
+
+    });
+
+    //agreagr itemas
+    $("#agregar").click(function(){
+      const nuevo = $("#nuevoItem").val;
+      //creamos elento li
+      $("ul").append("<li>${nuevo}</li>");
+    });
+  </script>
+
+</body>
+</html>
