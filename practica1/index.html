@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Coffee</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+       <!-- espacio para el navbar-->
+       <nav class="navbar">
+          <!--para imagen y nombre-->
+          <div class="navbar__logo">
+              <img src="./img/coffe1.png" alt="imgen o logo">
+              <p><h1 class="titulo-principal text-primary">COOFFE</h1></p>
+          </div>
+          <!-- para botones de navegacion-->
+          <ul class="navbar__menu">
+              <li><a href="#principal"><h2 class="titulo-secundario">Home</h2></a></li>
+              <li><a href="#formulario-entidades"><h2 class="titulo-secundario">formulario</h2></a></li>
+              <li><a href="./pages/articles.html"><h2 class="titulo-secundario">Articles</h2></a></li>
+              <li><a href="#formulario-contacto"><h2 class="titulo-secundario">Contact</h2></a></li>
+          </ul>
+        </nav> 
+    </header>
+    <div class="sectionGroup">
+      <section class="principal" id="principal">
+        
+          <img class="desplazable" id="desplazable" src="./img/coffe1.png" alt="Card image cap">
+        <img class="desplazabla2" id="desplazable2" src="./img/granosimple1.png"></img>
+        <img class="desplazabla3" id="desplazable3" src="./img/grano2.png"></img>
+        <img class="desplazabla4" id="desplazable4" src="./img/hoja.png"></img>
+        <img class="desplazabla5" id="desplazable5" src="./img/rama1.png"></img>
+        <div class="texto" id="texto">
+            <span class="text-info ">Coffee</span>
+        </div>
+      </section>
+      <section class="info">
+          <div class="info-img" id="imgdiv">
+            <div class="forma"></div>
+          </div>
+          <div class="info-text">
+            <article class="info-text-presentacion">
+              <p class="parrafo-estilo"><h1 class="titulo-principal">Disfruta del mejor de los sabores</h1></p>
+              <p class="parrafo-estilo"><em>En cada sabor</em> va un suspiro, de las tierras mas blandas, tiernas</p>
+              <p class="parrafo-estilo">donde el rocio del sol y los <strong>granos</strong>  del café se fusionan en uno</p>
+              <p class="parrafo-estilo">Esto es mas que un simple café, es un viaje hacia toda una </p>
+              <p class="parrafo-estilo">historia envuelta en lago tan delicado como lo es una simple taza</p>
+              <p class="parrafo-estilo">de café, de esos que sabemos preparar para tu deguste.</p>
+              <p class="parrafo-estilo">Con ese toque de romance matutino por cada sorbo del bueno, igual</p>
+              <p class="parrafo-estilo">que viajar en una nube esponjosa de recuerdos,
+              o sentir la primavera</p>
+              <p class="parrafo-estilo"><span>en un veranos cálido y un invierno sutil en el mas intenso verano</span></p>
+            </article>
+          </div>
+      </section>
+      <section class="tipos" id="tipos">
+          <article class="tipos-cards">
+            <div class="card "  id="cardizq">
+              <img class="card-img-top" src="./img/helado2.png" alt="Card image cap">
+              <div class="card-body">
+                <button class="comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="card" >
+              <img class="card-img-top" src="./img/tipo1.png" alt="Card image cap">
+              <div class="card-body">
+                <button class="comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="card cardder"  id="cardder">
+              <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+              <div class="card-body">
+                <button class="comprar">Comprar</button>
+              </div>
+            </div>
+          </article>
+      </section>
+      <section class="video">
+        <iframe class="video-publicidad" src="https://www.youtube.com/embed/5JGBAoEDpLQ?autoplay=1&mute=1&loop=1&playlist=5JGBAoEDpLQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+      </section>
+      <section class="listas">
+        <ul class="lista-desordenada">
+          <li><i class="fa-solid fa-mug-saucer"></i></li>
+          <li><i class="fa-solid fa-mug-saucer"></i></li>
+          <li><i class="fa-solid fa-mug-saucer"></i></li>
+        </ul>
+        <ol class="lista-ordenada">
+          <li><i class="fa-solid fa-mug-hot"></i></li>
+          <li><i class="fa-solid fa-mug-hot"></i></li>
+          <li><i class="fa-solid fa-mug-hot"></i></li>
+        </ol>
+
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <div class="row">
+            <!--imagen 1-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 2-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 3-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 4-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 5-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 6-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 7-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 8-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+
+
+            <!--imagen 9-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 10-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 11-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 12-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 13-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 14-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 15-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+            <!--imagen 16-->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <figure>
+                <img class="card-img-top" src="./img/helado4.png" alt="Card image cap">
+                <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="tabla">
+        <table class="table table-hover table-bordered tabla-estilo" id="tabla-entidades">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>nombre</th>
+              <th>Variación</th>
+              <th>Variación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="active">1</td>
+              <td class="success">cafe blanco</td>
+              <td class="warning">helado cafe</td>
+              <td class="warning">helado cafe</td>
+            </tr>
+            <tr>
+              <td class="active">2</td>
+              <td class="success">cafe negro</td>
+              <td class="warning">helado cafe</td>
+              <td class="warning">helado cafe</td>
+            </tr>
+            <tr>
+              <td class="active">3</td>
+              <td class="success">cafe con leche</td>
+              <td class="warning">helado cafe</td>
+              <td class="warning">helado cafe</td>
+            </tr>
+            <tr>
+              <td class="active">4</td>
+              <td class="success">expreso</td>
+              <td class="warning">helado cafe</td>
+              <td class="warning">helado cafe</td>
+            </tr>
+            <tr>
+              <td class="active">5</td>
+              <td class="success">con gromos</td>
+              <td class="warning">helado cafe</td>
+              <td class="danger">...</td>
+        
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="formulario-container">
+        <h2 class="titulo-secundario">Registro</h2>
+        <form id="formulario-entidades" class="formulario-estilo">
+          <div class="form-group">
+            <label for="inputId">ID</label>
+            <input type="text" class="form-control" id="inputId" placeholder="Introduce tu ID">
+          </div>
+    
+          <div class="form-group">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Introduce tu nombre">
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+      <div class="contacto-container">
+        <h2 class="titulo-secundario">Formulario de Contacto</h2>
+        <form id="formulario-contacto" class="formulario-estilo">
+          <div class="form-group">
+            <label for="inputAsunto">Asunto</label>
+            <input type="text" class="form-control" name="asunto" id="inputAsunto" placeholder="Asunto del mensaje" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="inputNombre" placeholder="Tu nombre" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="inputApellidos">Apellidos</label>
+            <input type="text" class="form-control" name="apellidos" id="inputApellidos" placeholder="Tus apellidos" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="tucorreo@ejemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="inputTelefono">Teléfono</label>
+            <input type="tel" class="form-control" id="inputTelefono" placeholder="123 456 789" required>
+          </div>
+    
+          <button type="submit"  class="btn btn-success">Enviar</button>
+        </form>
+      </div>
+      <div class="jumbotron">
+        <h1 >Te gusta el café?!</h1>
+        <p class="text-primary">Verdad que sí?</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">seguir leyendo</a></p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- Imagen 1 -->
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <figure>
+              <img class="img-responsive" src="./img/helado4.png" alt="Café">
+              <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+            </figure>
+          </div>
+      
+          <!-- Imagen 2 -->
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <figure>
+              <img class="img-responsive" src="./img/helado4.png" alt="Café">
+              <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+            </figure>
+          </div>
+      
+           <!-- Imagen 3 -->
+           <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <figure>
+              <img class="img-responsive" src="./img/helado4.png" alt="Café">
+              <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+            </figure>
+          </div>
+
+           <!-- Imagen 4 -->
+           <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <figure>
+              <img class="img-responsive" src="./img/helado4.png" alt="Café">
+              <figcaption><h3 class="titulo-terciario">Café de tierras frescas</h3></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer class="footer" id="contacto">
+        <div class="datosylogo">
+          <div class="misdatos">
+            <p class="text-warning"><i class="fa-solid fa-user"></i><strong>Raul Desiderio Moto Buambo</strong></p>
+            <p><i class="fa-solid fa-code"></i> Desarollador de Aplicaciones Multiplataformas</p>
+            <p><i class="fa-solid fa-server"></i> Adminsitrador de Sistemas Informáticos en Red</p>
+            <p><i class="fa-solid fa-phone"></i> +34 614 6861 99</p>
+          </div>
+          <div class="milogo text-center">logo</div>
+        </div>
+        <div class="redes">
+          <a href="" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" target="_blank" aria-label="Tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          
+        </div>
+      </footer>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
